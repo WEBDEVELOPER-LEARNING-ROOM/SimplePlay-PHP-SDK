@@ -83,8 +83,11 @@ Funkciók
 2.1.1
 2021.08.04.
 ----------		
-
 Hibajavítás
 	PHP8 json_encode() kompatibilitási probléma javítása
 	
-	
+2.1.2
+2024.04.18
+----------
+Funkciók
+    PHP 8.3 kompatibilitás (5.6-tól 8.3-ig)

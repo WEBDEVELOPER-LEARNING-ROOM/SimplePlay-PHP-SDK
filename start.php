@@ -1,9 +1,9 @@
 <?php
 
 /**
- *  Copyright (C) 2020 OTP Mobil Kft.
+ *  Copyright (C) 2024 OTP Mobil Kft.
  *
- *  PHP version 7
+ *  PHP version 8.3
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -16,12 +16,12 @@
  *   GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *   along with this program.  If not, see http://www.gnu.org/licenses
+ *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  * @category  SDK
- * @package   SimplePayV2_SDK
+ * @package   SimplePayV2
  * @author    SimplePay IT Support <itsupport@otpmobil.com>
- * @copyright 2020 OTP Mobil Kft.
+ * @copyright 2024 OTP Mobil Kft.
  * @license   http://www.gnu.org/licenses/gpl-3.0.html  GNU GENERAL PUBLIC LICENSE (GPL V3.0)
  * @link      http://simplepartner.hu/online_fizetesi_szolgaltatas.html
  */
@@ -230,5 +230,12 @@ print "</pre>";
 
 print "API RESULT";
 print "<pre>";
-print_r($trx->getReturnData());
+$returnData = $trx->getReturnData();
+print_r($returnData);
+
+    // transaction cancel 
+	print "<br/>";
+    print '<a href="transactioncancel.php?orderRef=' . $returnData['orderRef'] . '&transactionId=' . $returnData['transactionId'] . '&merchant=' . $returnData['merchant'] . '">TRANSACTION CANCEL (tranzakció törlése)</a>';
+    print "<br/><br/>";
+	
 print "</pre>";
