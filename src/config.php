@@ -1,9 +1,9 @@
 <?php
 
 /**
- *  Copyright (C) 2020 OTP Mobil Kft.
+ *  Copyright (C) 2024 OTP Mobil Kft.
  *
- *  PHP version 7
+ *  PHP version 8.3
  *
  *  This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -21,7 +21,7 @@
  * @category  SDK
  * @package   SimplePayV2
  * @author    SimplePay IT Support <itsupport@otpmobil.com>
- * @copyright 2020 OTP Mobil Kft.
+ * @copyright 2024 OTP Mobil Kft.
  * @license   http://www.gnu.org/licenses/gpl-3.0.html  GNU GENERAL PUBLIC LICENSE (GPL V3.0)
  * @link      http://simplepartner.hu/online_fizetesi_szolgaltatas.html
  */
